@@ -79,11 +79,11 @@ body {
 
 .my-image {
     display: block;
-    max-width: 100%; /* Ensures responsiveness */
-    width: 80%; /* Adjust width for a balanced look */
+    width: 100%; /* Ensures the image scales to fit its container */
+    max-width: 600px; /* Sets a maximum size to prevent oversized images */
     height: auto; /* Maintains aspect ratio */
-    margin: 20px auto; /* Centers image */
-    border-radius: 10px; /* Optional: Slightly rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a soft shadow */
-    object-fit: contain; /* Ensures full image is visible */
+    margin: 20px auto; /* Centers the image */
+    border-radius: 10px; /* Optional: Rounds corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Soft shadow */
+    object-fit: cover; /* Ensures images fill their area neatly */
 }
