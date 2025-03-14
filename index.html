@@ -4,110 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Industrial Manufacturing & Environment</title>
-    <style>
-        import "./styles.css"
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Industrial Manufacturing & Environment</h1>
+    <div class="cyber-container">
+        <h1 class="glitch-title">Industrial Manufacturing & Environment</h1>
 
-    <div class="section">
-        <h2>1.1 Research Question</h2>
-        <p>The scope of this research is how industrial manufacturing affects the environment and the drawbacks of developing industrial economies.</p>
-    </div>
+        <p class="cyber-text">
+            <span class="cyber-subtitle">1.1 Research Question</span><br>
+            The scope of this research is how industrial manufacturing affects the environment and the drawbacks of developing industrial economies.
+        </p>
 
-    <div class="section">
-        <h2>1.2 Why this matters today</h2>
-        <p>Today we face an interesting rhetoric about recovering the industrial sector of the Western World. It is claimed that a strong industrial backbone of the economy leads to a more sustainable economic future and security on the global stage.</p>
-    </div>
+        <p class="cyber-text">
+            <span class="cyber-subtitle">1.2 Why this matters today</span><br>
+            Today we face an interesting rhetoric about recovering the industrial sector of the Western World. It is claimed that a strong industrial backbone of the economy leads to a more sustainable economic future and security on the global stage.
+        </p>
 
-    <div class="section">
-        <h2>1.3 Relevance to Social Justice</h2>
-        <p>The race for industrial growth may be either positive or negative for economic prosperity. However, it is important to acknowledge how the economy can affect society.</p>
-        <p>We have already disrupted our ecosystem and are trying to at least stop damaging it further. Industry inherently relies on waste energy supply and produces many waste products. Industrial manufacturing is a titanic effort of transforming raw materials into meaningful products. This may result in setbacks in humanity’s sustainability goals, potentially stalling or even increasing CO2 emissions and freshwater consumption.</p>
-    </div>
+        <p class="cyber-text">
+            <span class="cyber-subtitle">1.3 Relevance to Social Justice</span><br>
+            The race for industrial growth may be either positive or negative for economic prosperity. However, it is important to acknowledge how the economy can affect society.
+        </p>
 
-    <div class="section">
-        <h2>2.1 Data Sources</h2>
-        <p>In this study, we merge three datasets:</p>
-        <ul>
+        <p class="cyber-text">
+            We have already disrupted our ecosystem and are trying to at least stop damaging it further. Industry inherently relies on waste energy supply and produces many waste products. Industrial manufacturing is a titanic effort of transforming raw materials into meaningful products. This may result in setbacks in humanity’s sustainability goals, potentially stalling or even increasing CO2 emissions and freshwater consumption.
+        </p>
+
+        <p class="cyber-text">
+            <span class="cyber-subtitle">2.1 Data Sources</span>
+        </p>
+
+        <ul class="cyber-list">
             <li>GEM - Global Economic Monitor Data from DataBank.</li>
             <li>Environment, Social, and Governance (ESG) Data from DataBank.</li>
             <li>Monthly Electricity Statistics from The International Energy Agency.</li>
         </ul>
-        <p>Our dataset, <strong>megabase3</strong>, was created by filtering out missing variables and countries to maintain consistency. This dataset includes values for all studied variables across all studied countries.</p>
-    </div>
 
-    <div class="section">
-        <h2>2.2 Type of Study</h2>
-        <p>This is an observational study, where we analyze and interpret the available data. We focus on distributions and correlations without experimental manipulation.</p>
-    </div>
+        <p class="cyber-text">
+            Our dataset, <strong>megabase3</strong>, was created by filtering out missing variables and countries to maintain consistency. This dataset includes values for all studied variables across all studied countries.
+        </p>
 
-    <div class="section">
-        <h2>2.3 Bias</h2>
-        <p>Bias exists based on personal perception and expectations. For example, assuming China to be an unsustainable industrial country with significant ecological issues or expecting European countries to be highly efficient in their green initiatives.</p>
-        <p>Additionally, countries may not be fully transparent in their data reporting, and measurement accuracy may vary.</p>
-    </div>
+        <p class="cyber-text">
+            <span class="cyber-subtitle">2.2 Type of Study</span><br>
+            This is an observational study, where we analyze and interpret the available data. We focus on distributions and correlations without experimental manipulation.
+        </p>
 
-    <div class="section">
-        <h2>2.4 Lurking Variables</h2>
-        <p>Countries have high variability, possibly even more than human subjects in typical studies. There are numerous external factors that can affect the data, making it difficult to draw definitive conclusions.</p>
-    </div>
+        <p class="cyber-text">
+            <span class="cyber-subtitle">2.3 Bias</span><br>
+            Bias exists based on personal perception and expectations. For example, assuming China to be an unsustainable industrial country with significant ecological issues or expecting European countries to be highly efficient in their green initiatives.
+        </p>
 
-    <div class="section">
-        <h2>3.1 Investigated Variables</h2>
-        <ul>
+        <p class="cyber-text">
+            Additionally, countries may not be fully transparent in their data reporting, and measurement accuracy may vary.
+        </p>
+
+        <p class="cyber-text">
+            <span class="cyber-subtitle">2.4 Lurking Variables</span><br>
+            Countries have high variability, possibly even more than human subjects in typical studies. There are numerous external factors that can affect the data, making it difficult to draw definitive conclusions.
+        </p>
+
+        <p class="cyber-text">
+            <span class="cyber-subtitle">3.1 Investigated Variables</span>
+        </p>
+
+        <ul class="cyber-list">
             <li>Pie chart of renewable energy in GWh per country.</li>
             <li>Bell distribution of renewable energy across the world.</li>
             <li>Manufacturing GDP proportion vs. Freshwater withdrawal correlation.</li>
             <li>CO2 emissions vs. Medium/High-tech manufacturing GDP proportion correlation.</li>
         </ul>
-    </div>
 
-    <div class="section">
-        <h2>3.2 Visual Representation of Data</h2>
-        <h3>Fig. 1 - Pie Chart</h3>
-        <p>This chart shows the share of renewable energy production by country. China has the largest proportion, making it an outlier.</p>
+        <p class="cyber-text">
+            <span class="cyber-subtitle">3.2 Visual Representation of Data</span>
+        </p>
 
-        <h3>Fig. 2 - Distribution Analysis</h3>
-        <p>The distribution is right-skewed, with extreme values significantly exceeding the interquartile range (IQR).</p>
+        <p class="cyber-text"><strong>Fig. 1 - Pie Chart:</strong> This chart shows the share of renewable energy production by country. China has the largest proportion, making it an outlier.</p>
+        <p class="cyber-text"><strong>Fig. 2 - Distribution Analysis:</strong> The distribution is right-skewed, with extreme values significantly exceeding the interquartile range (IQR).</p>
+        <p class="cyber-text"><strong>Fig. 3 - Freshwater vs. Manufacturing GDP:</strong> Computed correlation (r) = 0.053, indicating little to no relationship between manufacturing GDP and freshwater withdrawal.</p>
+        <p class="cyber-text"><strong>Fig. 4 - CO2 vs. High-Tech Manufacturing:</strong> Computed correlation (r) = 0.408, suggesting a moderate association between high-tech manufacturing and CO2 emissions.</p>
 
-        <h3>Fig. 3 - Freshwater vs. Manufacturing GDP</h3>
-        <p>Computed correlation (r) = 0.053, indicating little to no relationship between manufacturing GDP and freshwater withdrawal.</p>
+        <p class="cyber-text">
+            <span class="cyber-subtitle">3.3 Description of Findings</span>
+        </p>
 
-        <h3>Fig. 4 - CO2 vs. High-Tech Manufacturing</h3>
-        <p>Computed correlation (r) = 0.408, suggesting a moderate association between high-tech manufacturing and CO2 emissions, contradicting the expectation that high-tech industries reduce emissions.</p>
-    </div>
-
-    <div class="section">
-        <h2>3.3 Description of Findings</h2>
-        <p>There is significant noise in country-level data, making conclusions difficult. However, some patterns emerge:</p>
-        <ul>
+        <ul class="cyber-list">
             <li>Some countries show a strong positive correlation between industrial growth and freshwater efficiency.</li>
             <li>Unexpectedly, high-tech manufacturing correlates positively with CO2 emissions, questioning its sustainability claims.</li>
         </ul>
-    </div>
 
-    <div class="section">
-        <h2>4.1 Social Justice Discussion</h2>
-        <p>China, despite its industrial dominance, makes the most significant efforts in absolute renewable energy production.</p>
-        <p>No clear relationship is found between industrial manufacturing and freshwater consumption.</p>
-        <p>The positive correlation between high-tech manufacturing and CO2 emissions suggests a need for deeper scrutiny of environmental policies in tech-heavy industries.</p>
-    </div>
+        <p class="cyber-text">
+            <span class="cyber-subtitle">4.1 Social Justice Discussion</span><br>
+            China, despite its industrial dominance, makes the most significant efforts in absolute renewable energy production.
+        </p>
 
-    <div class="section">
-        <h2>4.2 Limitations</h2>
-        <p>This study only examines five variables and does not capture the full environmental impact of industrial manufacturing. Additionally, statistical generalization is not possible due to limited randomness in data selection.</p>
-    </div>
+        <p class="cyber-text">
+            No clear relationship is found between industrial manufacturing and freshwater consumption.
+        </p>
 
-    <div class="section">
-        <h2>4.3 Future Research Recommendations</h2>
-        <ul>
+        <p class="cyber-text">
+            The positive correlation between high-tech manufacturing and CO2 emissions suggests a need for deeper scrutiny of environmental policies in tech-heavy industries.
+        </p>
+
+        <p class="cyber-text">
+            <span class="cyber-subtitle">4.2 Limitations</span><br>
+            This study only examines five variables and does not capture the full environmental impact of industrial manufacturing.
+        </p>
+
+        <p class="cyber-text">
+            Additionally, statistical generalization is not possible due to limited randomness in data selection.
+        </p>
+
+        <p class="cyber-text">
+            <span class="cyber-subtitle">4.3 Future Research Recommendations</span>
+        </p>
+
+        <ul class="cyber-list">
             <li>Analyze energy output relative to energy demand growth.</li>
             <li>Investigate high-tech manufacturing sustainability across more environmental factors.</li>
             <li>Conduct a broader study for generalization to the global population.</li>
         </ul>
+
+        <button class="cyber-button">Explore More</button>
     </div>
 
 </body>
