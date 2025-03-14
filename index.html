@@ -34,16 +34,47 @@
             <span class="cyber-subtitle">2.1 Data Sources</span>
         </p>
 
-        <ul class="cyber-list">
-            <li>GEM - Global Economic Monitor Data from DataBank.</li>
-            <li>Environment, Social, and Governance (ESG) Data from DataBank.</li>
-            <li>Monthly Electricity Statistics from The International Energy Agency.</li>
-        </ul>
+         <p class="cyber-text">
+        In this study, we merge three datasets:
+    </p>
 
-        <p class="cyber-text">
-            Our dataset, <strong>megabase3</strong>, was created by filtering out missing variables and countries to maintain consistency. This dataset includes values for all studied variables across all studied countries.
-        </p>
+    <ul class="cyber-list">
+        <li><strong>GEM</strong> - Global Economic Monitor Data from DataBank.*</li>
+        <li><strong>Environment, Social, and Governance (ESG) Data</strong> from DataBank.**</li>
+        <li><strong>Monthly Electricity Statistics</strong> from The International Energy Agency.***</li>
+    </ul>
 
+    <p class="cyber-text">
+        The full data merging and processing details can be inspected <a href="YOUR_R_PROCESSING_LINK" target="_blank">here</a>. In brief, we removed all missing variables and countries to create a clean, consistent dataset named <strong>megabase3</strong>. This dataset ensures that all selected countries have equal representation across all studied series.
+    </p>
+
+    <h2 class="cyber-subtitle">2.2 Series We Study</h2>
+
+    <ul class="cyber-list">
+        <li><strong>Medium and High-Tech Manufacturing Value Added (% Manufacturing Value Added)</strong><br>
+            Tracks the year-to-year proportion of added value from manufacturing as a percentage of total GDP.<br>
+            <em>Quantitative.</em> *</li>
+
+        <li><strong>Industrial Production, Constant US$</strong><br>
+            Measures the total industrial value produced during the year.<br>
+            <em>Quantitative.</em> *</li>
+
+        <li><strong>CO2 Emissions (Metric Tons Per Capita)</strong><br>
+            Tracks annual CO2 emissions per capita.<br>
+            <em>Quantitative.</em> **</li>
+
+        <li><strong>Annual Freshwater Withdrawals, Total (% of Internal Resources)</strong><br>
+            Measures the proportion of internal freshwater withdrawals relative to total available resources.<br>
+            <em>Quantitative.</em> **</li>
+
+        <li><strong>Total Renewables (Hydro, Geo, Solar, Wind, Other)</strong><br>
+            Measures total renewable energy production in GWh per year.<br>
+            <em>Quantitative.</em> **</li>
+    </ul>
+
+    <p class="cyber-text">
+        Our analysis covers data from <strong>2010 to 2020</strong>, including a total of <strong>n = 112 countries</strong>.
+    </p>
         <p class="cyber-text">
             <span class="cyber-subtitle">2.2 Type of Study</span><br>
             This is an observational study, where we analyze and interpret the available data. We focus on distributions and correlations without experimental manipulation.
