@@ -48,8 +48,6 @@
         The full data merging and processing details can be inspected <a href="YOUR_R_PROCESSING_LINK" target="_blank">here</a>. In brief, we removed all missing variables and countries to create a clean, consistent dataset named <strong>megabase3</strong>. This dataset ensures that all selected countries have equal representation across all studied series.
     </p>
 
-    <h2 class="cyber-subtitle">2.2 Series We Study</h2>
-
     <ul class="cyber-list">
         <li><strong>Medium and High-Tech Manufacturing Value Added (% Manufacturing Value Added)</strong><br>
             Tracks the year-to-year proportion of added value from manufacturing as a percentage of total GDP.<br>
@@ -99,33 +97,59 @@
         </p>
 
         <ul class="cyber-list">
-            <li>Pie chart of renewable energy in GWh per country.</li>
-            <li>Bell distribution of renewable energy across the world.</li>
-            <li>Manufacturing GDP proportion vs. Freshwater withdrawal correlation.</li>
-            <li>CO2 emissions vs. Medium/High-tech manufacturing GDP proportion correlation.</li>
+            <li>Pie chart of renewable energy in GWh per country.(Fig 1)</li>
+            <li>Bell distribution of renewable energy across the world.(Fig 2)</li>
+            <li>Manufacturing GDP proportion vs. Freshwater withdrawal correlation.(Fig 3)</li>
+            <li>CO2 emissions vs. Medium/High-tech manufacturing GDP proportion correlation.(Fig 4)</li>
         </ul>
 
         <p class="cyber-text">
             <span class="cyber-subtitle">3.2 Visual Representation of Data</span>
         </p>
         <img src="./Renewable Pie.png" className="my-image" />
-        <p class="cyber-text"><strong>Fig. 1 - Pie Chart:</strong> This chart shows the share of renewable energy production by country. China has the largest proportion, making it an outlier.</p>
+        <p class="cyber-text"><strong>Fig. 1 - Pie Chart:</strong> This pie chart shows the share of renewable energy production by country. China has the largest proportion, standing out significantly in comparison to other countries. Its contribution is far above the average, making it an extreme value (outlier) in our dataset.</p>
         <img src="./Bell_r.png" className="my-image" />
-        <p class="cyber-text"><strong>Fig. 2 - Distribution Analysis:</strong> The distribution is right-skewed, with extreme values significantly exceeding the interquartile range (IQR).</p>
-        <img src="./FreshWater.png" className="my-image" />
-        <p class="cyber-text"><strong>Fig. 3 - Freshwater vs. Manufacturing GDP:</strong> Computed correlation (r) = 0.053, indicating little to no relationship between manufacturing GDP and freshwater withdrawal.</p>
+        <p class="cyber-text"><strong>Fig. 2 - Distribution Analysis:</strong> The distribution is right-skewed, indicating the presence of a long tail with extreme values. The largest outlier significantly exceeds the interquartile range (IQR) and is more than 3 standard deviations from the mean.</p>
+        <img src="./Fresh_R.png" className="my-image" />
+        <p class="cyber-text"><strong>Fig. 3 - Freshwater vs. Manufacturing GDP:</strong> On this chart we are trying to correlate country x bar Annual Manufacturing GDP to x bar Annual Freshwater Withdrawal. Computed r score = 0.053. Indicating there is little to no correlation between those series.</p>
         <img src="./Tech_r.png" className="my-image" />
-        <p class="cyber-text"><strong>Fig. 4 - CO2 vs. High-Tech Manufacturing:</strong> Computed correlation (r) = 0.408, suggesting a moderate association between high-tech manufacturing and CO2 emissions.</p>
+        <p class="cyber-text"><strong>Fig. 4 - CO2 vs. High-Tech Manufacturing:</strong> On this chart we are trying to correlate country CO2 to Medium/High-tech manufacturing value added of total GDP. Computed r score = 0.408. Quite an unexpected result, indicating potential association between the series</p>
 
         <p class="cyber-text">
             <span class="cyber-subtitle">3.3 Description of Findings</span>
         </p>
 
-        <ul class="cyber-list">
-            <li>Some countries show a strong positive correlation between industrial growth and freshwater efficiency.</li>
-            <li>Unexpectedly, high-tech manufacturing correlates positively with CO2 emissions, questioning its sustainability claims.</li>
-        </ul>
-
+        <p class="cyber-text">
+        My first concern with the data is that countries are extremely noisy and are not coherent. So, whatever correlation we get, we need to have some high-level view on data.
+        </p>
+        <img src="./FreshWater.png" className="my-image" />
+        <h3 class="cyber-subtitle">Fig 3.2</h3>
+        
+        <p class="cyber-text">
+            This view illustrates that countries exhibit significant variation in the correlation between freshwater consumption and industrial value as a proportion of GDP. The green areas suggest that industrial growth is likely sustainable, meaning freshwater use is optimized rather than increased.
+        </p>
+    
+        <p class="cyber-text">
+            In the United States, we observe a strong positive correlation, aligning with previous studies showing that industrial growth has not led to higher freshwater consumption—in fact, freshwater use has declined in recent decades, despite moderate industrial expansion.
+        </p>
+    
+        <p class="cyber-text">
+            However, several countries appear in red, indicating a negative correlation. Since industrial decline is rare in our dataset, this suggests that in these cases, freshwater use is increasing disproportionately compared to industrial growth—a sign of inefficiency or unsustainable practices.
+        </p>
+    
+        <p class="cyber-text">
+            The Nordic countries present an exception. Despite their negative correlation, we suspect this results from actual reductions in freshwater consumption, while industrial output continues to grow. This aligns with their highly efficient water management policies, closed-loop industrial processes, and reliance on hydropower.
+        </p>
+    
+        <p class="cyber-text">
+            Given the high variability (noise) in the data, drawing definitive conclusions at a global level is challenging. This lack of a strong overall correlation suggests that the relationship between freshwater use and industrial growth is highly dependent on regional factors such as infrastructure, policy, and technology.
+        </p>
+        <img src="./CO2.png" className="my-image" />
+        <h3 class="cyber-subtitle">Fig 4.2</h3>
+    
+        <p class="cyber-text">
+            Interesting happened on the correlation between medium/high-tech manufacturing correlation to CO2 levels. r = 0.4, which is quite a substantial association. Why? Again, countries are extremely noisy. But we can see China even being the biggest renewable energy producer has one of the most unsustainable technological growth. Idea was that the high-tech industry must actually lower CO2 emission, but we see quite the opposite.
+        </p>
         <p class="cyber-text">
             <span class="cyber-subtitle">4.1 Social Justice Discussion</span><br>
             China, despite its industrial dominance, makes the most significant efforts in absolute renewable energy production.
