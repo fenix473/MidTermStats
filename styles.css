@@ -78,12 +78,12 @@ body {
 }
 
 .my-image {
-    object-fit: cover;
-    height: 50vh; /* Adjust as needed */
-    width: auto; /* Maintain aspect ratio */
-    margin-top: 5vh;
-    margin-bottom: -20vh;
     display: block;
-    position: relative;
-    clip-path: inset(0% 0 40% 0);
+    max-width: 100%; /* Ensures responsiveness */
+    width: 80%; /* Adjust width for a balanced look */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Centers image */
+    border-radius: 10px; /* Optional: Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a soft shadow */
+    object-fit: contain; /* Ensures full image is visible */
 }
